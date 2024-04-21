@@ -1,0 +1,342 @@
+:root{
+    --maincolor:#0000ff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s linear; 
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.header{
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+  
+}
+.header #logo img{
+    width: 80px;
+}
+.header .navbar a{
+    font-size: 25px;
+    margin-left: 1.5rem;
+    color: rgb(115, 151, 110);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.header .navbar a:hover{
+   color: rgb(67, 91, 66);
+}
+.header .icons{
+    font-size: 2rem;
+   
+}
+
+.header .icons div{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.header .icons div:hover{
+    color: var(--maincolor);
+}
+.header .icons #menu-bars{
+    display: none;
+}
+.header .search-box{
+    position: absolute;
+    top: 110%;
+    right: 100%;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.header .search-box input{
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 100%;
+    border: none;
+}
+.header .search-box.active{
+    right: 2rem;
+}
+.header .navbar.active{
+    left: 0;
+}
+
+.main-background{
+    background: url(_.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+   
+}
+.main-text{
+    text-align: center;
+}
+.main-text h2{
+    color: white;
+    font-size: 30px;
+}
+.main-text h1{
+    color: white;
+    font-size: 38px;
+}
+.main-text h1 span{
+    color: var(--maincolor);
+} 
+.book-section{
+    padding: 2rem 7%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 212, 186);
+}
+.inner-book{
+    width: 100%;
+    background: black;
+    display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #49816747;
+}
+.inner-book input{
+    padding: 1rem 2rem;
+    margin: .5rem 0;
+
+}
+.book-btn{
+    padding: 1.1rem 2rem;
+    background: rgb(151, 121, 121);
+
+}
+.book-btn a{
+    color: white;
+    font-size: 1.5rem;
+}
+.main-hotel{
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.award-winning-hotel{
+    background-color: rgb(250, 243, 228);
+}
+.award-winning-hotel h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding: 2rem ;
+}
+.award-winning-hotel h1 span{
+    color: var(--maincolor);
+}
+.inner-award{
+    flex: 1 1 300px;
+}
+.inner-award h2,p{
+    text-align: center;
+}
+.inner-award h2{
+    font-size: 30px;
+    padding: 1rem;
+}
+.inner-award p{
+    font-size: 1.7rem;
+    padding: 2rem;
+}
+.inner-award img{
+    width: 100%;
+}
+.our-rooms{
+    padding: 2rem 7%;
+    background-color: rgb(230, 213, 171);
+}
+.our-rooms h1{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 2rem;
+}
+.our-rooms h1 span{
+    color: var(--maincolor);
+}
+.inner-rooms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.inner-rooms .room-box{
+    flex: 1 1 300px;
+}
+.inner-rooms .room-box img{
+    width: 100%;
+    padding: 1rem;
+}
+.inner-rooms .room-box .beds{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+.inner-rooms .room-box .beds span{
+    font-size: 1.7rem;
+}
+.inner-rooms .room-box .beds i{
+    font-size: 2rem;
+    color: var(--maincolor);
+    cursor: pointer;
+}
+.book-room-btn{
+    width: 50%;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border: 1px solid rgb(48, 76, 48);
+    text-align: center;
+    padding-top: 20px;
+}
+.book-room-btn:hover{
+    color: white;
+    background: rgb(178, 219, 178);
+}
+.book-room-btn a{
+    color: black;
+    font-size: 1.7rem;
+}
+.book-room-btn a:hover{
+    color: white;
+}
+.second-background{
+    background: url(★★★★★\ Caruso\,\ A\ Belmond\ Hotel\,\ Amalfi\ Coast\,\ Ravello\,\ Italy.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-background{
+    text-align: center;
+    
+}
+.second-background h1{
+    font-size: 60px;
+    color: white;
+}
+.second-background h2{
+    color: var(--maincolor);
+    font-size: 35px;
+}
+.gallery{
+    padding: 2rem 7%;
+
+}
+.gallery h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding: 2rem;
+}
+.gallery h1 span{
+    color: var(--maincolor);
+}
+.main-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.inner-gallery img{
+    width: 100%;
+}
+.wea{padding: 50px;}
+#weather-container {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto; /* Center the container horizontally */
+    background-color: #b7daee84; /* Example background color */
+}
+
+#weather-container button {
+    font-family: Arial, sans-serif; /* Change font family */
+    font-size: 16px; /* Change font size */
+    color: #ffffff; /* Text color */
+    background-color: #b0d5fb;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#weather-container button:hover {
+    background-color:rgb(181, 181, 253)}
+
+    .second-text h2{
+        color: rgba(255, 255, 255, 0.635);
+    }
+
+@media (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+
+    .header .icons #menu-bars{
+        display: inline-block;
+    }
+    .header{
+        padding:  2rem;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        right: 0;
+        background: var(--maincolor);
+
+    }
+    .header .navbar a{
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+        background: white;
+        border-radius: 10px;
+    }
+    .book-btn{
+       width: 100%;
+       margin-top: .5rem;
+    
+    }
+    .book-section{
+        padding: 2rem 0;
+    }
+}
